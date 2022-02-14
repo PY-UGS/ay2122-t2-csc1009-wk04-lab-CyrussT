@@ -7,7 +7,7 @@ public class TestStackOfIntegers {
         }
 
         while (!stack.empty()) {
-            System.out.println(stack.pop() + " " + stack.getSize() + "\n");
+            System.out.print(stack.pop() + " ");
         }
     }
 
