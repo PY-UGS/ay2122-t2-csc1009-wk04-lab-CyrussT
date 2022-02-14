@@ -10,6 +10,6 @@ public class Main {
         double height = input.nextDouble();
         BMI person = new BMI(weight, height);
         System.out.println("BMI is " + person.getBMI());
-        System.out.println(person.diagnoseBMI(person.getBMI()));
+        System.out.println(person.diagnoseBMI());
     }
 }
