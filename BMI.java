@@ -2,10 +2,13 @@ public class BMI {
     private double weight;
     private double height;
     private double BMI;
+    private static final double POUND_TO_KG = 0.45359237;
+    private static final double CM_TO_METERS = 0.0254;
+
 
     public BMI(double weight, double height) {
-        this.weight = weight * 0.45359237; //convert to kilograms
-        this.height = height * 0.0254; //convert to meters
+        this.weight = weight * POUND_TO_KG; //convert to kilograms
+        this.height = height * CM_TO_METERS; //convert to meters
         this.updateBMI(); //calculate BMI
     }
 
